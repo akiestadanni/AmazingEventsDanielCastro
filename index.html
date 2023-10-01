@@ -11,14 +11,12 @@
 </head>
 
 <body>
-    <header class="p-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3">
+    <header class="p-3 text-primary-emphasis ">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
                     <img id="img-logo" src="./Recursos_Amazing_Events_Task_1/amazing_brand.png" alt="logo" width="50%">
                 </a>
-               
-                
                 <div class="collapse navbar-collapse grid gap-3" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
@@ -43,13 +41,13 @@
                         </li>
                     </ul>
                 </div>
-
+            </div>
         </nav>
         <section>
             <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner figure">
                     <div class="carousel-item active">
-                        <img src="./Recursos_Amazing_Events_Task_1/optional_banner_1.jpg vw-60 vh-80"
+                        <img src="./Recursos_Amazing_Events_Task_1/optional_banner_1.jpg" width="60em" height="280em"
                             class="d-block w-100" alt="">
                     </div>
                     <div class="carousel-item">
@@ -84,49 +82,80 @@
 
     </header>
 
-
-
-
-    <main class="card-group grid gap-3">
-        <div class="card border-success mb-3 mb-3 card text-center mb-3 min-vw, 25" style="width: max-content 50%">
-            <img src="./Recursos_Amazing_Events_Task_1/food_fair.jpg" class="card-img-top" alt="image-food_fair">
-            <div class="card-body">
-                <h5 class="card-title text-wrap">Festival of the collectivities</h5>
-                <p class="card-text text-wrap">Enjoy your favorite dishes from different countries in a unique event for
-                    the whole
-                    family.</p>
-                <a href="#" class="btn btn-primary">more information</a>
+    <main class="container-fluid ">
+        <section id="buttons-search-and category" class="d-flex row container-fluid col ">
+            <div id="category" class="input-group rounded col">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">Category</label>
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">Category</label>
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">Category</label>
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">Category</label>
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">Category</label>
             </div>
-        </div>
-
-        <div class="card border-success mb-3 mb-3 card text-center mb-3 min-vw, 25" style="width: max-content 50%">
-            <img src="./Recursos_Amazing_Events_Task_1/outing_to_the_museum.jpg" class="card-img-top"
-                alt="outing_to_the_museum.jpg">
-            <div class="card-body">
-                <h5 class="card-title">Art Exhibition</h5>
-                <p class="card-text">Let's go to the art museum for an incredible tour to learn about the largest
-                    dinosaurs.</p>
-                <a href="#" class="btn btn-primary">more information</a>
+            <div id="search" class="input-group mb-3 col">
+                <input type="text" class="form-control" placeholder="Recipient's username"
+                    aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button class="btn btn-outline-secondary" type="button" id="button-addon2"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-search" viewBox="0 0 16 16">
+                        <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                    </svg></button>
             </div>
-        </div>
 
-        <div class="card border-success mb-3 card text-center mb-3 min-vw, 25">
-            <img src="./Recursos_Amazing_Events_Task_1/costume_party.jpg" class="card-img-top" alt="costume_party.jpg">
-            <div class="card-body">
-                <h5 class="card-title">Halloween Night</h5>
-                <p class="card-text">Come in your scariest costume character to win amazing prizes.</p>
-                <a href="#" class="btn btn-primary">more information</a>
-            </div>
-        </div>
 
-        <div class="card border-success mb-3 mb-3 card text-center mb-3 min-vw, 25" style="width: max-content 50%">
-            <img src="./Recursos_Amazing_Events_Task_1/music_concert.jpg" class="card-img-top" alt="music_concert.jpg">
-            <div class="card-body">
-                <h5 class="card-title">Metallica in concert</h5>
-                <p class="card-text">The only concert of the most emblematic band in the world</p>
-                <a href="#" class="btn btn-primary">more information</a>
+        </section>
+
+
+
+        <section class="card-group grid gap-3 container-fluid col ">
+            <div class="card border-success mb-3 mb-3 card text-center mb-3 min-vw, 25" style="width: max-content 50%">
+                <img src="./Recursos_Amazing_Events_Task_1/food_fair.jpg" class="card-img-top" alt="image-food_fair">
+                <div class="card-body">
+                    <h5 class="card-title text-wrap">Festival of the collectivities</h5>
+                    <p class="card-text text-wrap">Enjoy your favorite dishes from different countries in a unique event
+                        for
+                        the whole
+                        family.</p>
+                    <a href="#" class="btn btn-primary">more information</a>
+                </div>
             </div>
-        </div>
+
+            <div class="card border-success mb-3 mb-3 card text-center mb-3 min-vw, 25" style="width: max-content 50%">
+                <img src="./Recursos_Amazing_Events_Task_1/outing_to_the_museum.jpg" class="card-img-top"
+                    alt="outing_to_the_museum.jpg">
+                <div class="card-body">
+                    <h5 class="card-title">Art Exhibition</h5>
+                    <p class="card-text">Let's go to the art museum for an incredible tour to learn about the largest
+                        dinosaurs.</p>
+                    <a href="#" class="btn btn-primary">more information</a>
+                </div>
+            </div>
+
+            <div class="card border-success mb-3 card text-center mb-3 min-vw, 25">
+                <img src="./Recursos_Amazing_Events_Task_1/costume_party.jpg" class="card-img-top"
+                    alt="costume_party.jpg">
+                <div class="card-body">
+                    <h5 class="card-title">Halloween Night</h5>
+                    <p class="card-text">Come in your scariest costume character to win amazing prizes.</p>
+                    <a href="#" class="btn btn-primary">more information</a>
+                </div>
+            </div>
+
+            <div class="card border-success mb-3 mb-3 card text-center mb-3 min-vw, 25" style="width: max-content 50%">
+                <img src="./Recursos_Amazing_Events_Task_1/music_concert.jpg" class="card-img-top"
+                    alt="music_concert.jpg">
+                <div class="card-body">
+                    <h5 class="card-title">Metallica in concert</h5>
+                    <p class="card-text">The only concert of the most emblematic band in the world</p>
+                    <a href="#" class="btn btn-primary">more information</a>
+                </div>
+            </div>
+        </section>
     </main>
 
 
