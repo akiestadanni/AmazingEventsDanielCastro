@@ -7,173 +7,201 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
-    <title>STATS</title>
+    <title>Stats</title>
 </head>
 
 <body>
-    <header class="p-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3">
+    <header class="p-3 text-primary-emphasis ">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img id="img-logo" src="./Recursos_Amazing_Events_Task_1/amazing_brand.png" alt="logo" width="15%">
+                    <img id="img-logo" src="./Recursos_Amazing_Events_Task_1/amazing_brand.png" alt="logo" width="50%">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
                 <div class="collapse navbar-collapse grid gap-3" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active p-3 mb-2 bg-success text-white rounded-pill" aria-current="page"
-                                href="index.html">Home</a>
+                            <a id="index.html" class="nav-link active p-3 mb-2 bg-success text-white rounded-pill"
+                                aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active p-3 mb-2 bg-success text-white rounded-pill" aria-current="page"
-                                href="UpcomingEvents">UpcomingEvents</a>
+                            <a id="UpcomingEvents.html"
+                                class="nav-link active p-3 mb-2 bg-success text-white rounded-pill" aria-current="page"
+                                href="UpcomingEvents.html">UpcomingEvents</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active p-3 mb-2 bg-success text-white rounded-pill" aria-current="page"
-                                href="PastEvents">PastEvents</a>
+                            <a id="PastEvents.html" class="nav-link active p-3 mb-2 bg-success text-white rounded-pill"
+                                aria-current="page" href="PastEvents.html">PastEvents</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active p-3 mb-2 bg-success text-white rounded-pill" aria-current="page"
-                                href="Contact">Contact</a>
+                            <a id="Contact.html" class="nav-link active p-3 mb-2 bg-success text-white rounded-pill"
+                                aria-current="page" href="Contact.html">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active p-3 mb-2 bg-success text-white rounded-pill" aria-current="page"
-                                href="#">Stats</a>
+                            <a id="Stats.html" class="nav-link active p-3 mb-2 bg-success text-white rounded-pill"
+                                aria-current="page" href="#">Stats</a>
                         </li>
                     </ul>
                 </div>
-
-            </nav>
-            <!-- <section>
-                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner figure">
-                        <div class="carousel-item active">
-                            <img src="./Recursos_Amazing_Events_Task_1/optional_banner_1.jpg" class="d-block w-100"
-                            alt="">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./Recursos_Amazing_Events_Task_1/optional_banner_2.jpg" class="d-block w-100"
-                            alt="">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./Recursos_Amazing_Events_Task_1/optional_banner_3.jpg" class="d-block w-100"
-                            alt="">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./Recursos_Amazing_Events_Task_1/optional_banner_4.jpg" class="d-block w-100"
-                                alt="">
-                        </div>
-                        <div class="carousel-item"  width="20em">
-                            <img src="./Recursos_Amazing_Events_Task_1/optional_banner_5.jpg" class="d-block w-100"
-                                alt="">
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-            </section> -->
+            </div>
+        </nav>
+        <section id="carrusel">
             <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item">
-                    <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Marcador de posición: Primera diapositiva" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#555" dy=".3em">First slide</text></svg>
-                  </div>
-                  <div class="carousel-item">
-                    <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Marcador de posición: segunda diapositiva" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#666"></rect><text x="50%" y="50%" fill="#444" dy=".3em">Second slide</text></svg>
-                  </div>
-                  <div class="carousel-item active">
-                    <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Marcador de posición: tercera diapositiva" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#555"></rect><text x="50%" y="50%" fill="#333" dy=".3em">Third slide</text></svg>
-                  </div>
+                <div class="carousel-inner figure">
+                    <div class="carousel-item active">
+                        <img src="./Recursos_Amazing_Events_Task_1/optional_banner_1.jpg" width="60em" height="280em"
+                            class="d-block w-100" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./Recursos_Amazing_Events_Task_1/optional_banner_2.jpg" width="60em" height="280em"
+                            class="d-block w-100" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./Recursos_Amazing_Events_Task_1/optional_banner_3.jpg" width="60em" height="280em"
+                            class="d-block w-100" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./Recursos_Amazing_Events_Task_1/optional_banner_4.jpg" width="60em" height="280em"
+                            class="d-block w-100" alt="">
+                    </div>
+                    <div class="carousel-item" width="20em">
+                        <img src="./Recursos_Amazing_Events_Task_1/optional_banner_5.jpg" width="60em" height="280em"
+                            class="d-block w-100" alt="">
+                    </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Anterior</font></font></span>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Próximo</font></font></span>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
                 </button>
-              </div>
+            </div>
+        </section>
+
     </header>
-
-
-
-
     <main>
-        <div class="card" style="width: 18rem;">
-            <img src="" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-        </div>
-
-        <div class="card" style="width: 18rem;">
-            <img src="" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-        </div>
-
-        <div class="card" style="width: 18rem;">
-            <img src="" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-        </div>
-
-        <div class="card" style="width: 18rem;">
-            <img src="" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-        </div>
-    </main>
-
-
-    <footer>
-        <div class="container text-center bg-secundary">
+        <div class="container">
             <div class="row">
                 <div class="col">
-                    <img src="./Recursos_Amazing_Events_Task_1/whatsapp.png" alt="">
-                    <img src="./Recursos_Amazing_Events_Task_1/facebook.png" alt="">
-                    <img src="./Recursos_Amazing_Events_Task_1/instagram.png" alt="">
-                </div>
-                <div class="col">
-                    <button type="button" class="btn btn-primary"
-                        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
-                        Custom button
-                    </button>
+                    <table class=" table caption-top table-lg border border-rouded table table-bordered border-primary table-responsive">
+                        <thead>
+                            <caption class="bg-warning border border-info rounded"><h5>Events Statistics</h5></caption>
+                            <tr>
+                                <th class="table-warning">
+                                    Events with hinghest % of assistance
+                                </th>
+                                <th class="table-warning">
+                                    Events with lowest % of assistance
+                                </th>
+                                <th class="table-warning">
+                                    Event with larger capacity
+                                </th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="table-success"></td>
+                                <td class="table-success"></td>
+                                <td class="table-success"></td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
-    </footer>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <table class=" table caption-top table-lg border border-rouded table table-bordered border-primary table-responsive">
+                        <thead>
+                            <caption class="bg-warning border border-info rounded"><h5>Upcoming events statistics by category</h5></caption>
+                            <tr>
+                                <th class="table-warning">
+                                    Categories
+                                </th>
+                                <th class="table-warning">
+                                    Revenues
+                                </th>
+                                <th class="table-warning">
+                                    Porcentage of assitance
+                                </th>
+                            </tr>
+                        <tbody>
+                            <tr>
+                                <td class="table-success"></td>
+                                <td class="table-success"></td>
+                                <td class="table-success"></td>
+                            </tr>
+                            <tr>
+                                <td class="table-success"></td>
+                                <td class="table-success"></td>
+                                <td class="table-success"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <table class=" table caption-top table-lg border border-rouded table table-bordered border-primary table-responsive">
+                        <thead>
+                            <caption class="bg-warning border border-info rounded"><h5>Past events statistics by category</h5></caption>
+                            <tr>
+                                <th class="table-warning">
+                                    Categories
+                                </th>
+                                <th class="table-warning">
+                                    Revenues
+                                </th>
+                                <th class="table-warning">
+                                    Porcentage of assitance
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="table-success"></td>
+                                <td class="table-success"></td>
+                                <td class="table-success"></td>
+                            </tr>
+                            <tr>
+                                <td class="table-success"></td>
+                                <td class="table-success"></td>
+                                <td class="table-success"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
-        </script>
+        <footer class="vh-8 container-fluid bg-success row d-flex">
+            <div class="d-flex mb-4">
+                <div id="logo-watsap" class="p-2"><img src="./Recursos_Amazing_Events_Task_1/whatsapp.png"
+                        alt="logo-watsap"></div>
+
+                <div id="logo-facebook" class="p-2"><img src="./Recursos_Amazing_Events_Task_1/facebook.png"
+                        alt="logo-facebook.png"></div>
+
+                <div id="logo-instagram" class="p-2"><img src="./Recursos_Amazing_Events_Task_1/instagram.png" alt="">
+                </div>
+
+                <div class="ms-auto p-2"><button id="boton-cohort type=" button class=" btn-dark btn btn-primary "
+                        style="--bs-btn-padding-y: 1.5rem; --bs-btn-padding-x: 1.5rem; --bs-btn-font-size: 1.5rem;">
+                        COHORT
+                    </button>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+            </script>
 </body>
 
 </html>
