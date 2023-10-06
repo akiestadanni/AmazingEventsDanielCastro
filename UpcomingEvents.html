@@ -11,172 +11,204 @@
 </head>
 
 <body>
-    <header class="p-3 text-primary-emphasis ">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <header class="container-fluid">
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-md p-3 mb-3 mt-3">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img id="img-logo" src="./Recursos_Amazing_Events_Task_1/amazing_brand.png" alt="logo" width="50%">
+                    <img id="img-logo" class="img-fluid w-50" src="./Recursos_Amazing_Events_Task_1/amazing_brand.png"
+                        alt="">
                 </a>
-                <div class="collapse navbar-collapse grid gap-3" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a id="index.html" class="nav-link active p-3 mb-2 bg-success text-white rounded-pill" aria-current="page"
-                                href="index.html">Home</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item ">
+                            <a class="nav-link active d-flex border border-1 fs-5 bg-success  m-1 text-dark bg-opacity-25 text-success rounded-pill"
+                                aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a id="UpcomingEvents.html" class="nav-link active p-3 mb-2 bg-success text-white rounded-pill" aria-current="page"
-                                href="#">UpcomingEvents</a>
+                            <a class="nav-link active d-flex border border-2 fs-5 bg-success p-2 m-1 text-dark bg-opacity-25 text-success rounded-pill"
+                                aria-current="page" href="#">UpcomingEvents</a>
                         </li>
                         <li class="nav-item">
-                            <a id="PastEvents.html" class="nav-link active p-3 mb-2 bg-success text-white rounded-pill" aria-current="page"
-                                href="PastEvents.html">PastEvents</a>
+                            <a class="nav-link active d-flex border border-2 fs-5 bg-success p-2 m-1 text-dark bg-opacity-25 text-success rounded-pill"
+                                aria-current="page" href="PastEvents.html">PastEvents</a>
                         </li>
                         <li class="nav-item">
-                            <a id="PastEvents.html" class="nav-link active p-3 mb-2 bg-success text-white rounded-pill" aria-current="page"
-                                href="Contact.html">Contact</a>
+                            <a class="nav-link active d-flex border border-2 fs-5 bg-success p-2 m-1 text-dark bg-opacity-25 text-success rounded-pill"
+                                aria-current="page" href="Contact.html">Contact</a>
                         </li>
-                        <li id="Stats.html" class="nav-item">
-                            <a class="nav-link active p-3 mb-2 bg-success text-white rounded-pill" aria-current="page"
-                                href="Stats.html">Stats</a>
+                        <li class="nav-item">
+                            <a class="nav-link active d-flex border border-2 fs-5 bg-success p-2 m-1 text-dark bg-opacity-25 text-success rounded-pill"
+                                aria-current="page" href="Stats.html">Stats</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <section>
-            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <!-- carrusel -->
+        <section class="container-fluid mt-3 mb-3 p-1">
+            <div id="carouselExampleAutoplaying" class="carousel slide w-100" data-bs-ride="carousel">
                 <div class="carousel-inner figure">
                     <div class="carousel-item active">
-                        <img src="./Recursos_Amazing_Events_Task_1/optional_banner_1.jpg" width="60em" height="280em"
-                            class="d-block w-100" alt="">
+                        <h4>HOME</h4>
+                        <img src="./Recursos_Amazing_Events_Task_1/optional_banner_1.jpg" height="180"
+                            class="d-block w-100 object-fit-cover" alt="">
+                    </div>
+                    <div class="carousel-item ">
+                        <img src="./Recursos_Amazing_Events_Task_1/optional_banner_2.jpg" height="180"
+                            class="d-block w-100 object-fit-cover" alt="">
                     </div>
                     <div class="carousel-item">
-                        <img src="./Recursos_Amazing_Events_Task_1/optional_banner_2.jpg" width="60em" height="280em"
-                            class="d-block w-100" alt="">
+                        <img src="./Recursos_Amazing_Events_Task_1/optional_banner_3.jpg" height="180"
+                            class="d-block w-100 object-fit-cover" alt="">
                     </div>
                     <div class="carousel-item">
-                        <img src="./Recursos_Amazing_Events_Task_1/optional_banner_3.jpg" width="60em" height="280em"
-                            class="d-block w-100" alt="">
+                        <img src="./Recursos_Amazing_Events_Task_1/optional_banner_4.jpg" height="180"
+                            class="d-block w-100 object-fit-cover" alt="">
                     </div>
                     <div class="carousel-item">
-                        <img src="./Recursos_Amazing_Events_Task_1/optional_banner_4.jpg" width="60em" height="280em"
-                            class="d-block w-100" alt="">
-                    </div>
-                    <div class="carousel-item" width="20em">
-                        <img src="./Recursos_Amazing_Events_Task_1/optional_banner_5.jpg" width="60em" height="280em"
-                            class="d-block w-100" alt="">
+                        <img src="./Recursos_Amazing_Events_Task_1/optional_banner_5.jpg" height="180"
+                            class="d-block w-100 object-fit-cover" alt="">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
                     data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
+                    <span class="visually-hidden"></span>
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
                     data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
+                    <span class="visually-hidden"></span>
                 </button>
             </div>
         </section>
 
     </header>
-
-    <main class="container-fluid ">
-        <section id="buttons-search-and category" class="d-flex row container-fluid col ">
-            <div id="category" class="input-group rounded col">
-                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                <label class="form-check-label" for="defaultCheck1">Category</label>
-                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                <label class="form-check-label" for="defaultCheck1">Category</label>
-                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                <label class="form-check-label" for="defaultCheck1">Category</label>
-                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                <label class="form-check-label" for="defaultCheck1">Category</label>
-                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                <label class="form-check-label" for="defaultCheck1">Category</label>
+    <!-- checkbox  -->
+    <main class="container-fluid w-100">
+        <div id="buttons-search-and-category"
+            class="w-100 d-flex flex-wrap col bg-success text-dark bg-opacity-25 text-success">
+            <div class="w-auto container-fluid row">
+                <div class="checbox col border border-dark-subtle">
+                    <label class="form-check-label text-primary" for="defaultCheck1">Category</label>
+                    <input class="form-check-input" type="checkbox" value="defaultCheck1" id="defaultCheck1">
+                </div>
+                <div class="checbox col border border-dark-subtle">
+                    <label class="form-check-label text-primary " for="defaultCheck2">Category</label>
+                    <input class="form-check-input" type="checkbox" value="defaultCheck2" id="defaultCheck2">
+                </div>
+                <div class="checbox col border border-dark-subtle">
+                    <label class="form-check-label text-primary" for="defaultCheck3">Category</label>
+                    <input class="form-check-input" type="checkbox" value="defaultCheck3" id="defaultCheck3">
+                </div>
+                <div class="checbox col border border-dark-subtle">
+                    <label class="form-check-label text-primary" for="defaultCheck4">Category</label>
+                    <input class="form-check-input" type="checkbox" value="defaultCheck4" id="defaultCheck4">
+                </div>
+                <div class="checbox col border border-dark-subtle">
+                    <label class="form-check-label text-primary" for="defaultCheck5">Category</label>
+                    <input class="form-check-input" type="checkbox" value="defaultCheck5" id="defaultCheck5">
+                </div>
             </div>
-            <div id="search" class="input-group mb-3 col">
-                <input type="text" class="form-control" placeholder="Recipient's username"
-                    aria-label="Recipient's username" aria-describedby="button-addon2">
-                <button class="btn btn-outline-secondary" type="button" id="button-addon2"><svg
-                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            <!-- search -->
+            <div id="search" class="input-group col-1 w-auto container-fluid">
+                <input type="text" class="form-control" placeholder="Search" aria-label="search"
+                    aria-describedby="button-addon2">
+                <button class="btn btn-outline-secondary" type="button" id="button-addon2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="currentColor"
                         class="bi bi-search" viewBox="0 0 16 16">
                         <path
                             d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-                    </svg></button>
+                    </svg>
+                </button>
             </div>
-
-
-        </section>
-
-
-
-        <section class="card-group grid gap-3 container-fluid col ">
-            <div class="card border-success mb-3 mb-3 card text-center mb-3 min-vw, 25" style="width: max-content 50%">
-                <img src="./Recursos_Amazing_Events_Task_1/food_fair.jpg" class="card-img-top" alt="image-food_fair">
+        </div>
+        <!-- cards -->
+        <section id="cards"
+            class="container-fluid col d-flex justify-content-evenly align-content-center flex-wrap m-4">
+            <div class="card text-center card h-100 mt-3 mb-3 bg-primary-subtle" style="width: 18rem;">
+                <h4 class="card-title font-monospace p-2 m-3">Festival of the collectivities</h4>
+                <img src="./Recursos_Amazing_Events_Task_1/food_fair.jpg" class="card-img-bottom" alt="food_fair.jpg">
                 <div class="card-body">
-                    <h5 class="card-title text-wrap">Festival of the collectivities</h5>
-                    <p class="card-text text-wrap">Enjoy your favorite dishes from different countries in a unique event
-                        for
-                        the whole
+                    <p class="card-text">Enjoy your favorite dishes from different countries in a unique event for the
+                        whole
                         family.</p>
                     <a href="#" class="btn btn-primary">more information</a>
                 </div>
             </div>
-
-            <div class="card border-success mb-3 mb-3 card text-center mb-3 min-vw, 25" style="width: max-content 50%">
+            <div class="card text-center card h-100 mt-3 mb-3 bg-primary-subtle" style="width: 18rem;">
+                <h4 class="card-title font-monospace p-2 m-3">Art Exhibition</h4>
                 <img src="./Recursos_Amazing_Events_Task_1/outing_to_the_museum.jpg" class="card-img-top"
-                    alt="outing_to_the_museum.jpg">
+                    alt=outing_to_the_museum.jpg>
                 <div class="card-body">
-                    <h5 class="card-title">Art Exhibition</h5>
                     <p class="card-text">Let's go to the art museum for an incredible tour to learn about the largest
                         dinosaurs.</p>
                     <a href="#" class="btn btn-primary">more information</a>
                 </div>
             </div>
-
-            <div class="card border-success mb-3 card text-center mb-3 min-vw, 25">
-                <img src="./Recursos_Amazing_Events_Task_1/costume_party.jpg" class="card-img-top"
-                    alt="costume_party.jpg">
+            <div class="card text-center card h-100 mt-3 mb-3 bg-primary-subtle" style="width: 18rem;">
+                <h4 class="card-title font-monospace p-2 m-3">Halloween Night</h4>
+                <img src="./Recursos_Amazing_Events_Task_1/costume_party.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Halloween Night</h5>
-                    <p class="card-text">Come in your scariest costume character to win amazing prizes.</p>
+                    <p class="card-text">Come in your scariest costume character to win amazing prizes more information.
+                    </p>
                     <a href="#" class="btn btn-primary">more information</a>
                 </div>
             </div>
-
-            <div class="card border-success mb-3 mb-3 card text-center mb-3 min-vw, 25" style="width: max-content 50%">
+            <div class="card text-center card h-100 mt-3 mb-3 bg-primary-subtle" style="width: 18rem;">
+                <h4 class="card-title font-monospace p-2 m-3">"Metallica in concert</h4>
                 <img src="./Recursos_Amazing_Events_Task_1/music_concert.jpg" class="card-img-top"
                     alt="music_concert.jpg">
                 <div class="card-body">
-                    <h5 class="card-title">Metallica in concert</h5>
                     <p class="card-text">The only concert of the most emblematic band in the world</p>
+                    <a href="#" class="btn btn-primary">more information</a>
+                </div>
+            </div>
+            <div class="card text-center card h-100 mt-3 mb-3 bg-primary-subtle" style="width: 18rem;">
+                <h4 class="card-title font-monospace p-2 m-3">10K for life</h4>
+                <img src="./Recursos_Amazing_Events_Task_1/marathon.jpg" class="card-img-top" alt="marathon.jpg">
+                <div class="card-body">
+                    <p class="card-text">Come and exercise, improve your health and lifestyle.</p>
+                    <a href="#" class="btn btn-primary">more information</a>
+                </div>
+            </div>
+            <div class="card text-center card h-100 mt-3 mb-3 bg-primary-subtle" style="width: 18rem;">
+                <h4 class="card-title font-monospace p-2 m-3">School Book Fair</h4>
+                <img src="./Recursos_Amazing_Events_Task_1/books.jpg" class="card-img-top" alt="books.jpg">
+                <div class="card-body">
+                    <p class="card-text">Bring your unused school book and bring the one you need.</p>
+                    <a href="#" class="btn btn-primary">more information</a>
+                </div>
+            </div>
+            <div class="card text-center card h-100 mt-3 mb-3 bg-primary-subtle" style="width: 18rem;">
+                <h4 class="card-title font-monospace p-2 m-3">Avengers</h4>
+                <img src="./Recursos_Amazing_Events_Task_1/cinema.jpg" class="card-img-top" alt="cinema.jpg">
+                <div class="card-body">
+                    <p class="card-text">Marvel's Avengers 3d premiere the start of an epic saga with your best
+                        superheroes
+                    </p>
                     <a href="#" class="btn btn-primary">more information</a>
                 </div>
             </div>
         </section>
     </main>
-
-
-    <footer class="vh-8 container-fluid bg-success row d-flex">
-        <div class="d-flex mb-4">
-            <div id="logo-watsap" class="p-2"><img src="./Recursos_Amazing_Events_Task_1/whatsapp.png"
-                    alt="logo-watsap"></div>
-
-            <div id="logo-facebook" class="p-2"><img src="./Recursos_Amazing_Events_Task_1/facebook.png"
-                    alt="logo-facebook.png"></div>
-
-            <div id="logo-instagram" class="p-2"><img src="./Recursos_Amazing_Events_Task_1/instagram.png" alt=""></div>
-
-            <div class="ms-auto p-2"><button id="boton-cohort type=" button class=" btn-dark btn btn-primary "
-                    style="--bs-btn-padding-y: 1.5rem; --bs-btn-padding-x: 1.5rem; --bs-btn-font-size: 1.5rem;">
-                    COHORT
-                </button>
+    <!-- foote> -->
+    <footer class="container-fluid me-sm-auto bg-dark-subtle">
+        <div class="content-main col d-flex justify-content-between p-3">
+            <div>
+                <img src="./Recursos_Amazing_Events_Task_1/whatsapp.png" alt="logo-watsap">
+                <img src="./Recursos_Amazing_Events_Task_1/instagram.png" alt="logo-instagram">
+                <img src="./Recursos_Amazing_Events_Task_1/facebook.png" alt=" logo-facebook">
             </div>
+            <button class="text-bg-success" disabled="disabled">Cohort</button>
         </div>
     </footer>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
         </script>
