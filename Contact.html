@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,124 +8,112 @@
     <link rel="stylesheet" href="./style.css">
     <title>Contact</title>
 </head>
-
 <body>
-    <header class="p-3 text-primary-emphasis ">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <header class="container-fluid">
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-md p-3 mb-3 mt-3">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img id="img-logo" src="./Recursos_Amazing_Events_Task_1/amazing_brand.png" alt="logo" width="50%">
+                    <img id="img-logo" class="img-fluid w-50" src="./Recursos_Amazing_Events_Task_1/amazing_brand.png"
+                        alt="">
                 </a>
-                <div class="collapse navbar-collapse grid gap-3" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a id="index.html" class="nav-link active p-3 mb-2 bg-success text-white rounded-pill"
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item ">
+                            <a class="nav-link active d-flex border border-1 fs-5 bg-success  m-1 text-dark bg-opacity-25 text-success rounded-pill"
                                 aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a id="UpcomingEvents.html"
-                                class="nav-link active p-3 mb-2 bg-success text-white rounded-pill" aria-current="page"
-                                href="UpcomingEvents.html">UpcomingEvents</a>
+                            <a class="nav-link active d-flex border border-2 fs-5 bg-success p-2 m-1 text-dark bg-opacity-25 text-success rounded-pill"
+                                aria-current="page" href="UpcomingEvents.html">UpcomingEvents</a>
                         </li>
                         <li class="nav-item">
-                            <a id="PastEvents.html" class="nav-link active p-3 mb-2 bg-success text-white rounded-pill"
+                            <a class="nav-link active d-flex border border-2 fs-5 bg-success p-2 m-1 text-dark bg-opacity-25 text-success rounded-pill"
                                 aria-current="page" href="PastEvents.html">PastEvents</a>
                         </li>
                         <li class="nav-item">
-                            <a id="Contact.html" class="nav-link active p-3 mb-2 bg-success text-white rounded-pill"
+                            <a class="nav-link active d-flex border border-2 fs-5 bg-success p-2 m-1 text-dark bg-opacity-25 text-success rounded-pill"
                                 aria-current="page" href="#">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a id="Stats.html" class="nav-link active p-3 mb-2 bg-success text-white rounded-pill"
+                            <a class="nav-link active d-flex border border-2 fs-5 bg-success p-2 m-1 text-dark bg-opacity-25 text-success rounded-pill"
                                 aria-current="page" href="Stats.html">Stats</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <section id="carrusel">
-            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <!-- carrusel -->
+        <section class="container-fluid mt-3 mb-3 p-1">
+            <div id="carouselExampleAutoplaying" class="carousel slide w-100" data-bs-ride="carousel">
                 <div class="carousel-inner figure">
                     <div class="carousel-item active">
-                        <img src="./Recursos_Amazing_Events_Task_1/optional_banner_1.jpg" width="60em" height="280em"
-                            class="d-block w-100" alt="">
+                        <img src="./Recursos_Amazing_Events_Task_1/optional_banner_1.jpg" height="180"
+                            class="d-block w-100 object-fit-cover" alt="">
+                    </div>
+                    <div class="carousel-item ">
+                        <img src="./Recursos_Amazing_Events_Task_1/optional_banner_2.jpg" height="180"
+                            class="d-block w-100 object-fit-cover" alt="">
                     </div>
                     <div class="carousel-item">
-                        <img src="./Recursos_Amazing_Events_Task_1/optional_banner_2.jpg" width="60em" height="280em"
-                            class="d-block w-100" alt="">
+                        <img src="./Recursos_Amazing_Events_Task_1/optional_banner_3.jpg" height="180"
+                            class="d-block w-100 object-fit-cover" alt="">
                     </div>
                     <div class="carousel-item">
-                        <img src="./Recursos_Amazing_Events_Task_1/optional_banner_3.jpg" width="60em" height="280em"
-                            class="d-block w-100" alt="">
+                        <img src="./Recursos_Amazing_Events_Task_1/optional_banner_4.jpg" height="180"
+                            class="d-block w-100 object-fit-cover" alt="">
                     </div>
                     <div class="carousel-item">
-                        <img src="./Recursos_Amazing_Events_Task_1/optional_banner_4.jpg" width="60em" height="280em"
-                            class="d-block w-100" alt="">
-                    </div>
-                    <div class="carousel-item" width="20em">
-                        <img src="./Recursos_Amazing_Events_Task_1/optional_banner_5.jpg" width="60em" height="280em"
-                            class="d-block w-100" alt="">
+                        <img src="./Recursos_Amazing_Events_Task_1/optional_banner_5.jpg" height="180"
+                            class="d-block w-100 object-fit-cover" alt="">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
                     data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
+                    <span class="visually-hidden"></span>
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
                     data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
+                    <span class="visually-hidden"></span>
                 </button>
             </div>
         </section>
-
     </header>
 
-    <main class="container-fluid col-6 text-center fs-2 g-3 mt-3 mb-3 rounded-1 border border-success" >
-
-        <form id="form" class="col g-3 mt-3 bg-warning">
-              <label for="Full-name" class="form-label vh-12 aling">Full name</label>
-              <input type="text" class="form-control vh-12 bg-info-subtle" id="Full-name" placeholder required="Full-name">
+    <main class="container-fluid col-6 text-center fs-2 g-3 mt-3 mb-3 rounded-1 d-flex border border-success" >
+<!-- form -->
+        <form id="form" class="col g-3 mt-3 bg-warning-subtle">
+              <label for="Full-name" class="form-label vh-8 aling">Full name</label>
+              <input type="text" class="form-control vh-8 bg-info-subtle" id="Full-name" placeholder="Full-name" required="Full-name">
               <label for="Email" class="form-label ">Email</label>
-              <input type="email" class="form-control bg-info-subtle" id="Email" placeholder required="example@.com">
+              <input type="email" class="form-control bg-info-subtle" id="Email" placeholder="exmple@mail.com" required="example@.com">
               <label for="Message" class="form-label">Message</label>
-              <textarea class="form-control max-vh 50 bg-info-subtle" aria-label="With textarea" placeholder="Write your message here"></textarea>
+              <textarea class="form-control  bg-info-subtle" maxlength="120" aria-label="With textarea" placeholder="Write your message here"></textarea>
               </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
-
-
     </main>
-
-
-
-
-
-
-
-
-    <footer class="vh-8 container-fluid bg-success row d-flex">
-        <div class="d-flex mb-4">
-            <div id="logo-watsap" class="p-2"><img src="./Recursos_Amazing_Events_Task_1/whatsapp.png"
-                    alt="logo-watsap"></div>
-
-            <div id="logo-facebook" class="p-2"><img src="./Recursos_Amazing_Events_Task_1/facebook.png"
-                    alt="logo-facebook.png"></div>
-
-            <div id="logo-instagram" class="p-2"><img src="./Recursos_Amazing_Events_Task_1/instagram.png" alt=""></div>
-
-            <div class="ms-auto p-2"><button id="boton-cohort type=" button class=" btn-dark btn btn-primary "
-                    style="--bs-btn-padding-y: 1.5rem; --bs-btn-padding-x: 1.5rem; --bs-btn-font-size: 1.5rem;">
-                    COHORT
-                </button>
-            </div>
+<!-- foote> -->
+<footer class="container-fluid me-sm-auto bg-dark-subtle">
+    <div class="content-main col d-flex justify-content-between p-3">
+        <div>
+            <img src="./Recursos_Amazing_Events_Task_1/whatsapp.png" alt="logo-watsap">
+            <img src="./Recursos_Amazing_Events_Task_1/instagram.png" alt="logo-instagram">
+            <img src="./Recursos_Amazing_Events_Task_1/facebook.png" alt=" logo-facebook">
         </div>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
-        </script>
+        <p class="fs-3 text-wrap d-flex justify-content-center">Cohort</p>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
