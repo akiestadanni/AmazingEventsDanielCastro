@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>Stats</title>
+</head>
+
+<body>
+    <header class="container-fluid">
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-md p-3 mb-3 mt-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img id="img-logo" class="img-fluid w-50" src="./Recursos_Amazing_Events_Task_1/amazing_brand.png"
+                        alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item ">
+                            <a class="nav-link active d-flex border border-1 fs-5 bg-success  m-1 text-dark bg-opacity-25 text-success rounded-pill"
+                                aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active d-flex border border-2 fs-5 bg-success p-2 m-1 text-dark bg-opacity-25 text-success rounded-pill"
+                                aria-current="page" href="./UpcomingEvents.html">UpcomingEvents</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active d-flex border border-2 fs-5 bg-success p-2 m-1 text-dark bg-opacity-25 text-success rounded-pill"
+                                aria-current="page" href="./PastEvents.html">PastEvents</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active d-flex border border-2 fs-5 bg-success p-2 m-1 text-dark bg-opacity-25 text-success rounded-pill"
+                                aria-current="page" href="./Contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active d-flex border border-2 fs-5 bg-success p-2 m-1 text-dark bg-opacity-25 text-success rounded-pill"
+                                aria-current="page" href="#">Stats</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- carrusel -->
+        <section class="container-fluid mt-3 mb-3 p-1">
+            <div id="carouselExampleAutoplaying" class="carousel slide w-100" data-bs-ride="carousel">
+                <div class="carousel-inner figure">
+                    <div class="carousel-item active">
+                      <img src="./Recursos_Amazing_Events_Task_1/optional_banner_1.jpg" height="180"
+                            class="d-block w-100 object-fit-cover" alt="">
+                    </div>
+                    <div class="carousel-item ">
+                        <img src="./Recursos_Amazing_Events_Task_1/optional_banner_2.jpg" height="180"
+                            class="d-block w-100 object-fit-cover" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./Recursos_Amazing_Events_Task_1/optional_banner_3.jpg" height="180"
+                            class="d-block w-100 object-fit-cover" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./Recursos_Amazing_Events_Task_1/optional_banner_4.jpg" height="180"
+                            class="d-block w-100 object-fit-cover" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./Recursos_Amazing_Events_Task_1/optional_banner_5.jpg" height="180"
+                            class="d-block w-100 object-fit-cover" alt="">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden"></span>
+                </button>
+            </div>
+        </section>
+    </header>
+    <main>
+        <!-- table Events statistics -->
+        <section class="container-fluid w-100 d-flex justify-content-lg-center justify-content-sm-center justify-content-center row">
+            <table class="container-fluid table table-striped caption-top m-3 w-75 justify-content-center">
+                <thead>
+                    <caption class="bg-dark-subtle border border-black">
+                        <h5>Events Statistics</h5>
+                    </caption>
+                    <tr>
+                        <th class="table-warning border border-black text-center">
+                            Events with hinghest % of assistance
+                        </th>
+                        <th class="table-warning border border-black text-center">
+                            Events with lowest % of assistance
+                        </th>
+                        <th class="table-warning border border-black">
+                            Event with larger capacity
+                        </th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="table-success border border-black"></td>
+                        <td class="table-success border border-black"></td>
+                        <td class="table-success border border-black"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- table Upcoming events statistics by category -->
+            <table class=" container-fluid table table-striped caption-top m-3 w-75 justify-content-center p0 m-0" >
+                <thead>
+                    <caption class= "caption bg-dark-subtle border border-black">
+                        <h5>Upcoming events statistics by category</h5>
+                    </caption>
+                    <tr>
+                        <th class="table-warning border border-black text-center">
+                            Categories
+                        </th>
+                        <th class="table-warning border border-black text-center">
+                            Revenues
+                        </th>
+                        <th class="table-warning border border-black text-center">
+                            Porcentage of assitance
+                        </th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="table-success border border-black"></td>
+                        <td class="table-success border border-black"></td>
+                        <td class="table-success border border-black"></td>
+                    </tr>
+                    <tr>
+                        <td class="table-success border border-black"></td>
+                        <td class="table-success border border-black"></td>
+                        <td class="table-success border border-black"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- table Past events statistics by category -->
+            <table class="container-fluid table table-striped caption-top m-3 w-75 justify-content-center p0 m-0">
+                <thead>
+                    <caption class="caption bg-dark-subtle border border-black">
+                        <h5>Past events statistics by category</h5>
+                    </caption>
+                    <tr>
+                        <th class="table-warning border border-black text-center">
+                            Categories
+                        </th>
+                        <th class="table-warning border border-black text-center">
+                            Revenues
+                        </th>
+                        <th class="table-warning border border-black text-center">
+                            Porcentage of assitance
+                        </th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="table-success border border-black"></td>
+                        <td class="table-success border border-black"></td>
+                        <td class="table-success border border-black"></td>
+                    </tr>
+                    <tr>
+                        <td class="table-success border border-black"></td>
+                        <td class="table-success border border-black"></td>
+                        <td class="table-success border border-black"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <!-- end table -->
+        <!-- foote> -->
+        <footer class="container-fluid me-sm-auto bg-dark-subtle">
+            <div class="content-main col d-flex justify-content-between p-3">
+                <div>
+                    <img src="./Recursos_Amazing_Events_Task_1/whatsapp.png" alt="logo-watsap">
+                    <img src="./Recursos_Amazing_Events_Task_1/instagram.png" alt="logo-instagram">
+                    <img src="./Recursos_Amazing_Events_Task_1/facebook.png" alt=" logo-facebook">
+                </div>
+                <p class="fs-3 text-wrap d-flex justify-content-center">Cohort</p>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
