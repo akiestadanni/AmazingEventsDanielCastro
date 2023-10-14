@@ -6,8 +6,7 @@
 // _Loops
 // _DOM
 
-// ◾Tendrás que filtrar los eventos en los datos por fecha,
-//  usando js, ​​según en qué página te encuentres:
+
 
 // -Home mostrará todos los eventos.
 
@@ -40,27 +39,45 @@
 // 1 guardar en variante fechaActual
 //  esta me muestra la "clave"=id  y "Valor" areglo  
 // guarde en variable todos los eventos 
-let eventosPasados = []
-let eventosFuturos = []
-let todosLosEventos= data.events;
-
+let todosLosEventos = data.events;
 const fechaActual = data.currentDate;
-console.log("la fecha actual es " + fechaActual);
-let events
-console.log("data es un array y el contenido que es un " + data + "que contiene objetos");
+console.log(fechaActual);
+console.table(todosLosEventos);
 
+// {<div id="box-card" class="card text-center card h-100 mt-3 mb-3 bg-primary-subtle" style="width: 18rem;">
+// <h4 class="card-title font-monospace p-2 m-3">Festival of the collectivities</h4>
+// <img src="./Recursos_Amazing_Events_Task_1/food_fair.jpg" class="card-img-bottom" alt="food_fair.jpg">
+// <div class="card-body">
+//     <p class="card-text">Enjoy your favorite dishes from different countries in a unique event for the
+//         whole
+//         family.</p>
+//     <a href="#" class="btn btn-primary">more information</a>
+// </div>
+// </div>}
+let sectionDeCard = document.getElementById("cards");
 
+function crearCards(todosLosEventos) {
+for (let idEvento of todosLosEventos) {
+    let estructuraCard = document.createElement("div");
+    sectionDeCard.appendChild(estructuraCard)
 
-console.log("son los eventos con fecha mayor a fecha actual");
-for( let idEvento of todosLosEventos){
-    if(idEvento.date>fechaActual){
-    eventosFuturos.push(idEvento)
-} else{
-    eventosPasados.push(idEvento)
+    // como pasar todas las clases en una linea ??¡?
+    // estructuraCard.classList.add(`${"card text-center h-100 mt-3 mb-3 bg-primary-subtle"}`);
+
+    estructuraCard.classList.add("card")
+    estructuraCard.classList.add("text-center")
+    estructuraCard.classList.add("h-100")
+    estructuraCard.classList.add("mt-3")
+    estructuraCard.classList.add("mb-3")
+    estructuraCard.classList.add("bg-primary-subtle")
+    estructuraCard.style.width = "18rem";
+    estructuraCard.innerHTML = `<h4 class="card-title font-monospace p-2 m-3">Festival of the collectivities</h4>
+ <img src="./Recursos_Amazing_Events_Task_1/food_fair.jpg" class="card-img-bottom" alt="food_fair.jpg">
+ <div class="card-body">
+    <p class="card-text">Enjoy your favorite dishes from different countries in a unique event for the
+        whole
+       family.</p>
+    <a href="#" class="btn btn-primary">more information</a>`
 }
 }
-console.table(eventosFuturos);
-
-
-console.log("son los eventos con fechas menores a fecha actual");
-console.table(eventosPasados);
+crearCards(todosLosEventos)
