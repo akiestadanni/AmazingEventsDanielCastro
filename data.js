@@ -1,6 +1,6 @@
 const data = {
   currentDate: "2023-01-01",
-    events: [
+  events: [
     {
       _id: "639c723b992482e5f2834be9",
       name: "Collectivities Party",
@@ -194,3 +194,40 @@ const data = {
     },
   ],
 };
+let todosLosEventos = data.events;
+const fechaActual = data.currentDate;
+let eventosPasados = []
+let eventosFuturos = []
+for (let idEvento of todosLosEventos) 
+{
+  if (idEvento.date < fechaActual){
+    eventosPasados.push(idEvento)
+  } else {eventosFuturos.push(idEvento)}
+    
+}
+
+let sectionDeCard = document.getElementById("cards");
+
+function crearCards(todosLosEventos) {
+for (let idEvento of todosLosEventos) {
+    let estructuraCard = document.createElement("div");
+    sectionDeCard.appendChild(estructuraCard)
+
+    // como pasar todas las clases en una linea ??¡?
+    // estructuraCard.classList.add(`${"card text-center h-100 mt-3 mb-3 bg-primary-subtle"}`);
+
+    estructuraCard.classList.add("card")
+    estructuraCard.classList.add("text-center")
+    estructuraCard.classList.add("h-100")
+    estructuraCard.classList.add("mt-3")
+    estructuraCard.classList.add("mb-3")
+    estructuraCard.classList.add("bg-primary-subtle")
+    estructuraCard.style.width = "18rem";
+    estructuraCard.innerHTML = `<h4 class="card-title font-monospace p-2 m-3"> ${idEvento.name} </h4>
+ <img src= ${idEvento.image} alt="food_fair.jpg" class=>
+ <div class="card-body">
+    <p class="card-text">${idEvento.description}
+       family.</p>
+    <a href="#" class="btn btn-primary h-25">more information</a>`
+}
+}
