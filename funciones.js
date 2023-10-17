@@ -19,13 +19,13 @@ function crearCards(todosLosEventos) {
     // como pasar todas las clases en una linea ??¡?
     // estructuraCard.classList.add(`${card text-center h-100 mt-3 mb-3 bg-primary-subtle}`);
 
-    estructuraCard.classList.add("card")
-    estructuraCard.classList.add("text-light")
-    estructuraCard.classList.add("bg-success")
-    estructuraCard.classList.add("text-center")
-    estructuraCard.classList.add("card-grup")
-    estructuraCard.classList.add("m-3")
-    estructuraCard.classList.add("bg-gradient")
+    estructuraCard.classList.add("card","text-light","bg-success","text-center","card-grup","m-3","bg-gradient")
+    // estructuraCard.classList.add("")
+    // estructuraCard.classList.add("")
+    // estructuraCard.classList.add("")
+    // estructuraCard.classList.add()
+    // estructuraCard.classList.add()
+    // estructuraCard.classList.add()
    
     estructuraCard.style.width = "18rem";
     estructuraCard.innerHTML = 
