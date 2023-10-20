@@ -16,17 +16,7 @@ function crearCards(todosLosEventos) {
     let estructuraCard = document.createElement("div");
     sectionDeCard.appendChild(estructuraCard)
 
-    // como pasar todas las clases en una linea ??¡?
-    // estructuraCard.classList.add(`${card text-center h-100 mt-3 mb-3 bg-primary-subtle}`);
-
     estructuraCard.classList.add("card","text-light","bg-success","text-center","card-grup","m-3","bg-gradient")
-    // estructuraCard.classList.add("")
-    // estructuraCard.classList.add("")
-    // estructuraCard.classList.add("")
-    // estructuraCard.classList.add()
-    // estructuraCard.classList.add()
-    // estructuraCard.classList.add()
-   
     estructuraCard.style.width = "18rem";
     estructuraCard.innerHTML = 
     `<h5 class="card-title ">${idEvento.name}</h5>
@@ -37,3 +27,4 @@ function crearCards(todosLosEventos) {
     </div>`
   }
 }
+
