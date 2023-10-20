@@ -15,7 +15,8 @@ function crearCards(todosLosEventos) {
   for (let idEvento of todosLosEventos) {
     let estructuraCard = document.createElement("div");
     sectionDeCard.appendChild(estructuraCard)
-     estructuraCard.classList.add("card","text-light","bg-success","text-center","card-grup","m-3","bg-gradient")
+
+    estructuraCard.classList.add("card","text-light","bg-success","text-center","card-grup","m-3","bg-gradient")
     estructuraCard.style.width = "18rem";
     estructuraCard.innerHTML = 
     `<h5 class="card-title ">${idEvento.name}</h5>
@@ -26,3 +27,4 @@ function crearCards(todosLosEventos) {
     </div>`
   }
 }
+
