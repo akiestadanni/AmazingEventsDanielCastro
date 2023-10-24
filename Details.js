@@ -12,42 +12,41 @@ estructuraCardDetails.innerHTML= `<div class="col-md-6 d-flex justify-content-be
 
 <h5>Date:</h5>
 <p class="card-text"><small class="text-body-secondary"></small>
-aqui va la fecha del evento
+${idEvento.date}
 </p>
 
-<h5 class="desciption">Description:</h5>
+<h5 class="description">Description:</h5>
 <p class="card-text">
-aqui va ala descripcion de evento
+${idEvento.description}
 </p>
 
 <h5>Category:</h5>
 <p class="card-text"><small class="text-body-secondary">
-Aqui la category
+${idEvento.category}
 </small></p>
 
 <h5>Place:</h5>
 <p class="card-text"><small class="text-body-secondary">
-el sitio del evento
+${idEvento.place}
 </small></p>
 
 <h5>Capacity :</h5>
 <p class="card-text"><small class="text-body-secondary">
-capacidad
+${idEvento.capacity}
 </small></p>
 
 <h5>Estimate:</h5>
 <p class="card-text"><small class="text-body-secondary">
-estimado
+${idEvento.estimate}
 </small></p>
 
 <h5>assistance:</h5>
 <p class="card-text"><small class="text-body-secondary">
-asistencia
+${idEvento.assistance}
 </small></p>
 
 <h5>Price:</h5>
 <p class="card-text"><small class="text-body-secondary">
-el precio
-</small></p>
+${idEvento.price}></p>
 </div>
 </div>`
