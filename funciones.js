@@ -22,27 +22,29 @@ function crearCards(todosLosEventos) {
       <img src=${idEvento.image} class="card-img-bottom p-3 style="H-50" alt="...">
     <div class=" card-body">
     <p class="card-text f-2">${idEvento.description}</p>
-    <a href="#" class="btn btn-primary">more information</a>
+    <a href="./Details.html?_id=${idEvento._id}" class="btn btn-primary">more information</a>
     </div>`
   }
 }
 
 // // Sprint #3
+// // pintar checkbox
+// const filtroPorEventos = todosLosEventos.map(categoria=>categoria.category);
+// console.table(filtroPorEventos);
+// let filtroParaCheckbox= new Set(filtroPorEventos)
+// console.table(filtroParaCheckbox);
+// let contenedorCheckbox=document.getElementById("contenedor-checkbox");
 
-const filtroPorEventos = todosLosEventos.map(categoria=>categoria.category);
-console.table(filtroPorEventos);
-let filtroParaCheckbox= new Set(filtroPorEventos)
-console.table(filtroParaCheckbox);
-let contenedorCheckbox=document.getElementById("contenedor-checkbox");
-
-function crearCheckbox(filtroParaCheckbox) {
-  filtroParaCheckbox.forEach(categoria=>{categoria
-    let estructuraCheckbox = document.createElement("div");
-    contenedorCheckbox.appendChild(estructuraCheckbox)
-    estructuraCheckbox.classList.add("container-fluid","d-flex","col","row")
-    estructuraCheckbox.innerHTML = 
-    `<div class="checbox col border border-dark-subtle">
-    <label class="form-check-label text-primary" for="defaultCheck1">Category</label    >
-    <input class="form-check-input" type="checkbox" value="defaultCheck1" id="defaultCheck1">
-    </div>`})
-}
+// function crearCheckbox(filtroParaCheckbox) {
+//   filtroParaCheckbox.forEach(categoria=>{categoria
+//     let estructuraCheckbox = document.createElement("div");
+//     contenedorCheckbox.appendChild(estructuraCheckbox)
+//     estructuraCheckbox.classList.add("container-fluid","d-flex","col","row")
+//     estructuraCheckbox.innerHTML = 
+//     `<div class="checbox col border border-dark-subtle">
+//     <label class="form-check-label text-primary for=${categoria.category}>Category</label>
+//     <input class="form-check-input" type="checkbox" id= ${categoria.category} name= ${categoria.category} value= ${categoria.category}">
+//     </div>`;
+//   }
+//   )
+// }
