@@ -1,1 +1,2 @@
 crearCards(eventosFuturos)
+crearCheckbox(filtroParaCheckbox)
