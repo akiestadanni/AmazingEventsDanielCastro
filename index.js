@@ -1,27 +1,40 @@
-// crearCards(todosLosEventos)
+crearCheckbox(eventosSinDuplicados)
+const contenedorSearch = document.getElementById("search");
 
-// pintar checkbox
-console.log(todosLosEventos);
-const filtroPorEventos = todosLosEventos.map(categoria => categoria.category);
-let filtroParaCheckbox = new Set(filtroPorEventos)
-let eventosSinDuplicados = Array.from(filtroParaCheckbox)
-console.table(filtroParaCheckbox);
-console.table(eventosSinDuplicados);
-let contenedorCheckbox = document.getElementById("contenedor-checkbox");
-console.log(contenedorCheckbox);
-function crearCheckbox(todosLosEventos) {
-  todosLosEventos.forEach(categoria => {
-    let estructuraCheckbox = document.createElement("div");
-    estructuraCheckbox.classList.add("container-fluid", "d-flex", "col", "row")
-    estructuraCheckbox.innerHTML = `
-    <div class="checbox container-fluid col border border-dark-subtle">
-    <label class="form-check-label text-primary for="${categoria}">"${categoria}"</label>
-    <input class="form-check-input" type="checkbox" id="${categoria}" value="${categoria}">
-    </div>
-    `;
-    contenedorCheckbox.appendChild(estructuraCheckbox);
-    console.log(estructuraCheckbox);
-  });
+
+
+//-activo el escuchador de eventos para el div de checkbox//
+//- creo función que me retorna las categorias chequeadas//
+//-guardo en variable los valores checked//
+//-creo las cards con los valores checked
+
+
+
+contenedorCheckbox.addEventListener('change',()=>{
+    let filtroEventosChecked = filtrarEventos(todosLosEventos)
+    crearCards(filtroEventosChecked)
 }
-  crearCheckbox(eventosSinDuplicados);
-  console.log(eventosSinDuplicados);
+
+);
+
+function filtrarEventos(eventos) {
+    checboxActivados = Array.from(document.querySelectorAll('input[type="Checkbox"]:checked')).map(checkbox => checkbox.value)
+    if (checboxActivados.length > 0) {
+        return todosLosEventos.filter(categoria => checboxActivados.includes(categoria.category))
+    } return eventos
+
+}
+let filtroEventosChecked= filtrarEventos(todosLosEventos)
+crearCards(filtroEventosChecked)
+
+
+console.log(contenedorSearch);
+function filtroTextoIngresado(eventos) {
+    return todosLosEventos.filter(evento=> evento.name.toLowerCase().includes(contenedorSearch.value.toLowerCase()))
+}
+contenedorSearch.addEventListener('keyup',()=>{
+    let filtrobusquedaTexto= filtroTextoIngresado(todosLosEventos)
+    crearCards(filtrobusquedaTexto)
+    console.log(filtrobusquedaTexto);
+});
+
