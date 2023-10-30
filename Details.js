@@ -8,58 +8,58 @@ let eventoBuscado= eventos.find(evento=>evento._id==idEvento)
 console.table(eventoBuscado);
 
 // esta funcion pinta la card de details
-function crearCard(deLoseventos) {
+function crearCard(idEvento) {
   const contenedorCardDetails= document.getElementById("card-details")
   const estructuraCardDetails= document.createElement("div")
   estructuraCardDetails.classList.add("row","g-0")
   estructuraCardDetails.innerHTML= `<div class="col-md-6 d-flex justify-content-between border border-light">
-  <img src="${deLoseventos.image} " class="img-fluid rounded-start object-fit-cover"
+  <img src="${idEvento.image} " class="img-fluid rounded-start object-fit-cover"
       alt="music_concert.jpg">
   </div>
   <div class="col-md-6 justify-content-center bg-danger-subtle p-2">
   <div class="card-body">
-  <h4 class="card-title p-1 m-3 d-flex justify-content-evenly">${deLoseventos.name}</h4>
+  <h4 class="card-title p-1 m-3 d-flex justify-content-evenly">${idEvento.name}</h4>
   
   <h5>Date:</h5>
   <p class="card-text"><small class="text-body-secondary"></small>
-  ${deLoseventos.date}
+  ${idEvento.date}
   </p>
   
   <h5 class="description">Description:</h5>
   <p class="card-text">
-  ${deLoseventos.description}
+  ${idEvento.description}
   </p>
   
   <h5>Category:</h5>
   <p class="card-text"><small class="text-body-secondary">
-  ${deLoseventos.category}
+  ${idEvento.category}
   </small></p>
   
   <h5>Place:</h5>
   <p class="card-text"><small class="text-body-secondary">
-  ${deLoseventos.place}
+  ${idEvento.place}
   </small></p>
   
   <h5>Capacity :</h5>
   <p class="card-text"><small class="text-body-secondary">
-  ${deLoseventos.capacity}
+  ${idEvento.capacity}
   </small></p>
   
   <h5>Estimate:</h5>
   <p class="card-text"><small class="text-body-secondary">
-  ${deLoseventos.estimate}
+  ${idEvento.estimate}
   </small></p>
   
   <h5>assistance:</h5>
   <p class="card-text"><small class="text-body-secondary">
-  ${deLoseventos.assistance}
+  ${idEvento.assistance}
   </small></p>
   
   <h5>Price:</h5>
   <p class="card-text"><small class="text-body-secondary">
-  ${deLoseventos.price}></p>
+  ${idEvento.price}></p>
   </div>
   </div>`;
   contenedorCardDetails.appendChild(estructuraCardDetails)
-  }
-crearCard(eventoBuscado)
+  };
+crearCard(eventoBuscado);
